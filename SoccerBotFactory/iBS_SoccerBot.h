@@ -44,8 +44,8 @@ struct SBP_Stats
     int armor;
     int battery_power;
     int speed;
-    int kick_power;
-    int headbutt_power;
+    int kick_power; // ball kicker 
+    int headbutt_power; // 
     int CPU_speed;
     int pinalty_countdown;
     

@@ -9,6 +9,7 @@
 
 #ifndef iBS_BotBase_h
 #define iBS_BotBase_h
+
 #include <iostream>
 #include <vector>
 
@@ -17,7 +18,7 @@ struct ibsPosition
         int x, y;
         ibsPosition(){x=y=0;};
         ibsPosition(int ax, int ay){x=ax;y=ay;};
-        //    Position(const  Position& a){x=a.x;y=a.y;};
+        ibsPosition(Position const& a){x=a.x;y=a.y;};
         ~ibsPosition(){};
         
         bool operator ==(ibsPosition& other)
@@ -76,8 +77,49 @@ private:
     
 };
 // -----------------------------------------------
-#define GRID_COL 10 // change width here
-#define GRID_ROW 10 // change hight here
+struct ibsRow 
+{
+    std::vector<uint_fast32_t> col;
+    ibsRow():col(0){};
+    ibsRow(size_t sz):col(sz){};
+    ibsRow(std::vector<uint_fast32_t> nc):col(nc.size()){};
+    
+    ibsRow& operator=(ibsRow const& nr)
+    { 
+        col.resize(nr.col.size());
+        for(size_t c=0; c<col.size(); c++) 
+            col[c] = nr.col[c];
+        return *this;
+    };
+};
+
+struct ibsGrid
+{
+    ibsGrid():row(0){};
+    ibsGrid(size_t row_sz, size_t col_sz)
+    {
+        row.reserve(row_sz);
+        for(size_t r=0; r<row_sz; ++r) 
+        {
+            row.push_back(ibsRow(col_sz));
+        }
+    };
+    
+ 
+    std::vector<ibsRow> row;   
+};
+
+class ibsGameGrid2 : public ibsGrid
+{
+    ibsGameGrid2():this(50, 100){};
+    
+};
+
+// ibsGrid grid;//init todo
+// uint_fast32_t value = grid.row[y].col[x];
+
+#define GRID_COL 100 // change width here
+#define GRID_ROW 50 // change hight here
 
 struct ibsGameGrid 
 {
