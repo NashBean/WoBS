@@ -23,15 +23,6 @@ class SoccerGameGrid : public ibsGameGrid
     
 };
 
-class SoccerBot : private ibsBotBase 
-{
-    
-    SoccerBot(){ibsBotBase();};
-    
-public:
-    
-};
-
 struct SBP_UserSettings 
 {
     
@@ -61,9 +52,18 @@ struct SBP_Stats
     };
 };
 
+class SoccerBot : private ibsBotBase 
+{
+    SBP_Stats stats;
+    SoccerBot(){ibsBotBase();};
+    
+public:
+    
+};
+
 class SoccerBotPlayer : public SoccerBot
 {
-    
+    SBP_UserSettings user;
 public:
 };
 
