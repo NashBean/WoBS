@@ -6,7 +6,7 @@
 //  Copyright 2016 iBean Software.
 //  All rights reserved.
 //
-
+#include "BotBase.h"
 #ifndef iBS_BotGameBase_h
 #define iBS_BotGameBase_h
 
