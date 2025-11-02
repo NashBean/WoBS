@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/home/nash/code/WoBS/build",
+  "command": "/usr/bin/c++ -I/home/nash/code/WoBS/src/include -std=gnu++1z -Wall -Wextra -Wpedantic -g -Wno-sign-compare -o CMakeFiles/wobs_core.dir/src/core/Grid.cpp.o -c /home/nash/code/WoBS/src/core/Grid.cpp",
+  "file": "/home/nash/code/WoBS/src/core/Grid.cpp",
+  "output": "CMakeFiles/wobs_core.dir/src/core/Grid.cpp.o"
+},
+{
+  "directory": "/home/nash/code/WoBS/build",
+  "command": "/usr/bin/c++ -I/home/nash/code/WoBS/src/include -std=gnu++1z -Wall -Wextra -Wpedantic -g -Wno-sign-compare -o CMakeFiles/wobs_core.dir/src/core/Position.cpp.o -c /home/nash/code/WoBS/src/core/Position.cpp",
+  "file": "/home/nash/code/WoBS/src/core/Position.cpp",
+  "output": "CMakeFiles/wobs_core.dir/src/core/Position.cpp.o"
+},
+{
+  "directory": "/home/nash/code/WoBS/build",
+  "command": "/usr/bin/c++ -I/home/nash/code/WoBS/src/include -std=gnu++1z -Wall -Wextra -Wpedantic -g -Wno-sign-compare -o CMakeFiles/wobs_core.dir/src/core/Bot.cpp.o -c /home/nash/code/WoBS/src/core/Bot.cpp",
+  "file": "/home/nash/code/WoBS/src/core/Bot.cpp",
+  "output": "CMakeFiles/wobs_core.dir/src/core/Bot.cpp.o"
+},
+{
+  "directory": "/home/nash/code/WoBS/build",
+  "command": "/usr/bin/c++ -I/home/nash/code/WoBS/src/include -std=gnu++1z -Wall -Wextra -Wpedantic -g -Wno-sign-compare -o CMakeFiles/wobs_core.dir/src/core/Physics.cpp.o -c /home/nash/code/WoBS/src/core/Physics.cpp",
+  "file": "/home/nash/code/WoBS/src/core/Physics.cpp",
+  "output": "CMakeFiles/wobs_core.dir/src/core/Physics.cpp.o"
+},
+{
+  "directory": "/home/nash/code/WoBS/build",
+  "command": "/usr/bin/c++ -I/home/nash/code/WoBS/src/include -std=gnu++1z -Wall -Wextra -Wpedantic -g -Wno-sign-compare -o CMakeFiles/wobs_core.dir/src/core/AI.cpp.o -c /home/nash/code/WoBS/src/core/AI.cpp",
+  "file": "/home/nash/code/WoBS/src/core/AI.cpp",
+  "output": "CMakeFiles/wobs_core.dir/src/core/AI.cpp.o"
+},
+{
+  "directory": "/home/nash/code/WoBS/build",
+  "command": "/usr/bin/c++ -I/usr/include/SDL2 -I/home/nash/code/WoBS/src/include -std=gnu++1z -D_REENTRANT -Wall -Wextra -Wpedantic -g -Wno-sign-compare -o CMakeFiles/wobs_desktop.dir/src/platform/desktop/main.cpp.o -c /home/nash/code/WoBS/src/platform/desktop/main.cpp",
+  "file": "/home/nash/code/WoBS/src/platform/desktop/main.cpp",
+  "output": "CMakeFiles/wobs_desktop.dir/src/platform/desktop/main.cpp.o"
+}
+]

@@ -1,11 +1,11 @@
-// Grid.hpp
 #pragma once
 #include <vector>
 #include "wobs/Position.hpp"
 
 class Grid {
-    std::vector<std::vector<int>> cells;   // 0=empty, 1=wall, 2=ball, 3+=botId
+    std::vector<std::vector<int>> cells;
     int width, height;
+    Position ball_pos = Position(-1,-1);
 public:
     Grid(int w = 100, int h = 50);
     bool inBounds(const Position& p) const;
@@ -16,6 +16,4 @@ public:
     int  h() const { return height; }
     Position ballPos() const { return ball_pos; }
     void setBallPos(const Position& p) { ball_pos = p; }
-private:
-    Position ball_pos = Position(-1,-1);   // -1 = no ball
 };

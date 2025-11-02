@@ -1,0 +1,4 @@
+/home/nash/code/WoBS/build/CMakeFiles/wobs_core.dir
+/home/nash/code/WoBS/build/CMakeFiles/wobs_desktop.dir
+/home/nash/code/WoBS/build/CMakeFiles/edit_cache.dir
+/home/nash/code/WoBS/build/CMakeFiles/rebuild_cache.dir
